@@ -1,9 +1,12 @@
-<nav class="nav bg-success">
-  <a class="nav-link text-white" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
-  <a class="nav-link text-white" [routerLink]="['/dashboard']" routerLinkActive="active">Dashboard</a>
-  <a class="nav-link text-white" [routerLink]="['/submission']" routerLinkActive="active">Submission</a>
+<nav class="nav bg-success d-flex justify-content-between">
+  <div class="d-flex">
+    <a class="nav-link text-white" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+    <a class="nav-link text-white" [routerLink]="['/dashboard']" routerLinkActive="active">Dashboard</a>
+    <a class="nav-link text-white" [routerLink]="['/submission']" routerLinkActive="active">Submission</a>
+  </div>
 
-  <a class="nav-link text-white"></a>
+
+  <a class="nav-link text-white">Sign Up</a>
 </nav>
 <div class="xs-12 p-4">
   <router-outlet></router-outlet>
