@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
     <p>In here, all data submitted from the submission page is displayed.</p>
 
     <comp-1>
-      
+      <button (click)="handleClickDashboard()" class="btn btn-danger">Dashboard</button>
     </comp-1>
   `
 })
@@ -20,4 +20,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
   }
 
+  handleClickDashboard() {
+    console.log('Dashboard onClick()..... ');
+  }
 }

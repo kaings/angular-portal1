@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
       `
     <h2>Home</h2>
     <p>this is the main page.</p>
+    
     <comp-1>
-      
+      <button (click)="handleClickHome()" class="btn btn-outline-warning">Home</button>
     </comp-1>
-      `
+  `
 })
 export class HomeComponent implements OnInit {
 
@@ -18,4 +19,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  handleClickHome() {
+    console.log('Home onClick()..... ');
+  }
 }

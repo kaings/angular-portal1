@@ -4,7 +4,9 @@ import {Component} from '@angular/core';
   selector: 'comp-1',
   template:
       `
-        <h2>Component1-Component</h2>
+        <ng-container>
+          <ng-content></ng-content>
+        </ng-container>
         
       `
 })
