@@ -7,6 +7,7 @@ import { DashboardComponent } from './views/dashboard.component';
 import { SubmissionComponent } from './views/submission.component';
 import { Comp1Component } from './components/comp-1.component';
 import { RouterModule, Routes } from '@angular/router';
+import {PortalModule} from '@angular/cdk/portal';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -24,7 +25,8 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    PortalModule
   ],
   providers: [],
   bootstrap: [AppComponent]
